@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <login-container>
+      <logo-container>
+        <img src="mahindra.png" alt="Mahindra Logo" class="logo-img" />
+      </logo-container>
+      <form action="/login" method="post" class="login-form">
+        <username-label>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="input-field"
+            required
+          />
+        </username-label>
+        <password-label>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="input-field"
+            required
+          />
+        </password-label>
+        <div class="button-group">
+          <button type="submit" class="login-button">Login</button>
+          <button
+            type="button"
+            class="register-button"
+            onclick="window.location.href = 'register.html'"
+          >
+            Register
+          </button>
+        </div>
+      </form>
+    </login-container>
+    <div
+      class="main-bg"
+      style="
+        background-image: url(https://www.biospectrumindia.com/uploads/articles/dhf5k1xuqaa8j4u-9910.jpg);
+      "
+    ></div>
+  </body>
+</html>
