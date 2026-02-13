@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Manager Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <div class="logo-section">
+          <img src="mahindra.png" alt="Mahindra Logo" class="logo-img" />
+        </div>
+        <nav class="navigation">
+          <ul class="nav-menu">
+            <li><a href="#" class="nav-link active">Dashboard</a></li>
+            <li><a href="#" class="nav-link">Projects</a></li>
+            <li><a href="#" class="nav-link">Issues</a></li>
+            <li><a href="#" class="nav-link">Board</a></li>
+            <li><a href="#" class="nav-link">Reports</a></li>
+            <li><a href="#" class="nav-link">Settings</a></li>
+          </ul>
+        </nav>
+        <div class="user-section">
+          <div class="user-avatar">LC</div>
+          <div class="user-info">
+            <p class="user-name">Luis Carlos</p>
+            <p class="user-role">Developer</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="top-header">
+          <h1>Dashboard</h1>
+          <button class="new-issue-btn">+ New Issue</button>
+        </header>
+
+        <!-- Quick Stats -->
+        <section class="stats-section">
+          <div class="stat-card">
+            <div class="stat-number">12</div>
+            <div class="stat-label">Active Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">47</div>
+            <div class="stat-label">Open Issues</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">23</div>
+            <div class="stat-label">In Progress</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">89</div>
+            <div class="stat-label">Completed</div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+          <h2>Recent Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Mobile App Redesign</h3>
+                <span class="project-status active">Active</span>
+              </div>
+              <p class="project-description">Redesign of the mobile application for iOS and Android</p>
+              <div class="project-meta">
+                <span class="team-member">AB</span>
+                <span class="team-member">CD</span>
+                <span class="team-member">EF</span>
+                <span class="more-members">+2</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 65%"></div>
+              </div>
+              <p class="progress-text">65% Complete</p>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Backend API v2.0</h3>
+                <span class="project-status inprogress">In Progress</span>
+              </div>
+              <p class="project-description">Development of new API endpoints and database optimization</p>
+              <div class="project-meta">
+                <span class="team-member">GH</span>
+                <span class="team-member">IJ</span>
+                <span class="team-member">KL</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 42%"></div>
+              </div>
+              <p class="progress-text">42% Complete</p>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Security Audit</h3>
+                <span class="project-status planning">Planning</span>
+              </div>
+              <p class="project-description">Complete security review and vulnerability assessment</p>
+              <div class="project-meta">
+                <span class="team-member">MN</span>
+                <span class="team-member">OP</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 15%"></div>
+              </div>
+              <p class="progress-text">15% Complete</p>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Documentation Update</h3>
+                <span class="project-status active">Active</span>
+              </div>
+              <p class="project-description">Update technical documentation and user guides</p>
+              <div class="project-meta">
+                <span class="team-member">QR</span>
+                <span class="team-member">ST</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 78%"></div>
+              </div>
+              <p class="progress-text">78% Complete</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recent Issues -->
+        <section class="issues-section">
+          <h2>Recent Issues</h2>
+          <div class="issues-table">
+            <div class="issue-row header">
+              <div class="issue-key">Key</div>
+              <div class="issue-summary">Summary</div>
+              <div class="issue-assignee">Assignee</div>
+              <div class="issue-priority">Priority</div>
+              <div class="issue-status">Status</div>
+            </div>
+            <div class="issue-row">
+              <div class="issue-key">PROJ-124</div>
+              <div class="issue-summary">Fix login validation error</div>
+              <div class="issue-assignee">Luis Carlos</div>
+              <div class="issue-priority"><span class="priority-high">High</span></div>
+              <div class="issue-status"><span class="status-inprogress">In Progress</span></div>
+            </div>
+            <div class="issue-row">
+              <div class="issue-key">PROJ-123</div>
+              <div class="issue-summary">Add dark mode theme</div>
+              <div class="issue-assignee">Marco</div>
+              <div class="issue-priority"><span class="priority-medium">Medium</span></div>
+              <div class="issue-status"><span class="status-todo">To Do</span></div>
+            </div>
+            <div class="issue-row">
+              <div class="issue-key">PROJ-122</div>
+              <div class="issue-summary">Optimize database queries</div>
+              <div class="issue-assignee">Camou</div>
+              <div class="issue-priority"><span class="priority-high">High</span></div>
+              <div class="issue-status"><span class="status-inprogress">In Progress</span></div>
+            </div>
+            <div class="issue-row">
+              <div class="issue-key">PROJ-121</div>
+              <div class="issue-summary">Create user manual</div>
+              <div class="issue-assignee">Antonio</div>
+              <div class="issue-priority"><span class="priority-low">Low</span></div>
+              <div class="issue-status"><span class="status-done">Done</span></div>
+            </div>
+            <div class="issue-row">
+              <div class="issue-key">PROJ-120</div>
+              <div class="issue-summary">Security patch deployment</div>
+              <div class="issue-assignee">JHDelacruz777</div>
+              <div class="issue-priority"><span class="priority-high">High</span></div>
+              <div class="issue-status"><span class="status-done">Done</span></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
