@@ -191,7 +191,9 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card:hover {
@@ -498,4 +500,14 @@ body {
   .stats-section {
     grid-template-columns: 1fr;
   }
+}
+
+/* Footer simple al final (sin animación) */
+.mahindra-footer {
+  background-color: #5f0229;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 14px;
 }
