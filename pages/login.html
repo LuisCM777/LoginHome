@@ -15,7 +15,7 @@
       <logo-container>
         <img src="mahindra.png" alt="Mahindra Logo" class="logo-img" />
       </logo-container>
-      <form action="/login" method="post" class="login-form">
+      <form class="login-form">
         <username-label>
           <label for="username">Username:</label>
           <input
@@ -37,11 +37,10 @@
           />
         </password-label>
         <div class="button-group">
-          <button 
-          type="submit" 
-          class="login-button" 
-          onclick="window.location.href = 'dashboard.html'"
-          > 
+          <button
+            type="submit"
+            class="login-button"
+          >
             Login
           </button>
           <button
@@ -53,6 +52,7 @@
           </button>
         </div>
       </form>
+      <div id="message" class="message"></div>
     </login-container>
     <div
       class="main-bg"
@@ -60,5 +60,10 @@
         background-image: url(https://www.biospectrumindia.com/uploads/articles/dhf5k1xuqaa8j4u-9910.jpg);
       "
     ></div>
+
+    <script src="auth.js"></script>
+    <script>
+      document.querySelector('.login-form').addEventListener('submit', login);
+    </script>
   </body>
 </html>

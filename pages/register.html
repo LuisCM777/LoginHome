@@ -15,7 +15,7 @@
       <logo-container>
         <img src="mahindra.png" alt="Mahindra Logo" class="logo-img" />
       </logo-container>
-      <form action="login.html" method="get" class="register-form">
+      <form class="register-form">
         <username-label>
           <label for="username">Username:</label>
           <input
@@ -50,6 +50,7 @@
           <button type="submit" class="register-button">Register</button>
         </div>
       </form>
+      <div id="message" class="message"></div>
     </register-container>
     <div
       class="main-bg"
@@ -57,5 +58,10 @@
         background-image: url(https://www.biospectrumindia.com/uploads/articles/dhf5k1xuqaa8j4u-9910.jpg);
       "
     ></div>
+
+    <script src="auth.js"></script>
+    <script>
+      document.querySelector('.register-form').addEventListener('submit', register);
+    </script>
   </body>
 </html>
