@@ -139,6 +139,24 @@ body {
   background-color: #29251d;
 }
 
+/* estilo para el botón de Pokémon */
+.pokemon-btn {
+  background-color: #1e90ff; /* un azul llamativo */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* separación del otro botón */
+}
+
+.pokemon-btn:hover {
+  background-color: #005bb5;
+}
+
 /* Stats Section */
 .stats-section {
   display: grid;
@@ -502,7 +520,6 @@ body {
   }
 }
 
-/* Footer simple al final (sin animación) */
 .mahindra-footer {
   background-color: #5f0229;
   color: #ffffff;

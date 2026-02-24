@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ditto</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      .card {
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+        width: 150px;
+      }
+      .card h1 {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pokémon Ditto</h1>
+    <div id="pokemon" class="card">
+      <p>Cargando...</p>
+    </div>
+
+    <script>
+      // se usa la PokeAPI para obtener los datos de Ditto
+      fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+        .then((res) => res.json())
+        .then((data) => {
+          const container = document.getElementById("pokemon");
+          container.innerHTML = `
+          <h1>${data.name}</h1>
+          <img src="${data.sprites.front_default}" alt="${data.name}">
+          <p>Base experience: ${data.base_experience}</p>
+          <p>Height: ${data.height}</p>
+          <p>Weight: ${data.weight}</p>
+        `;
+        })
+        .catch((err) => {
+          document.getElementById("pokemon").innerText =
+            "Error al cargar datos";
+          console.error(err);
+        });
+    </script>
+  </body>
+</html>
