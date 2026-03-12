@@ -35,3 +35,46 @@ body {
 .card p {
   margin: 5px 0;
 }
+
+.battle-panel {
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  max-width: 640px;
+  background: #f7f7f7;
+}
+.battle-panel button {
+  margin: 10px 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.battle-result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.selected-1 {
+  box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.7);
+}
+.selected-2 {
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.7);
+}
+
+.battle-sprites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.battle-sprites img {
+  width: 96px;
+  height: 96px;
+}
+.battle-sprites .sprite-left {
+  transform: scaleX(-1); /* dar la espalda */
+  margin-right: 40px;
+}
+.battle-sprites .sprite-right {
+  margin-left: 40px;
+}

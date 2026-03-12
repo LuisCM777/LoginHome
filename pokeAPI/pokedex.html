@@ -8,6 +8,17 @@
   <body>
     <h1>Pokédex Completa</h1>
     <input type="text" id="search" placeholder="Buscar Pokémon..." />
+
+    <div id="battle-panel" class="battle-panel">
+      <div>
+        <strong>Jugador 1:</strong> <span id="selected1">-</span>
+        <strong>Jugador 2:</strong> <span id="selected2">-</span>
+      </div>
+      <div id="battleSprites" class="battle-sprites"></div>
+      <button id="battleButton" disabled>Combatir</button>
+      <div id="battleResult" class="battle-result"></div>
+    </div>
+
     <div id="pokedex" class="pokedex">
       <p>Cargando Pokémons...</p>
     </div>
